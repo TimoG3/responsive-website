@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background: url('/responsiveweb/image/cpunk.png') no-repeat;
+    background: url('cpunk.png') no-repeat;
     background-color: black;
 }
 
