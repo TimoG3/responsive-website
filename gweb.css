@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background: url('/responsiveweb/image/cpunk.png') no-repeat;
+    background-color: black;
+}
+
+.wrap {
+    color: white;
+    font-family: "DINOT-Regular";
+    text-shadow: -2px 1px 10px rgb(122, 96, 47);
+    font-size: 2vw;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2vw;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container2 {
+        flex-direction: column;
+    }
+
+    .pics {
+        width: 100%;
+        height: auto;
+    }
+}
+
+img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-left: 1vw ridge whitesmoke;
+    border-right: 1vw ridge whitesmoke;
+    border-radius: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-family: "RETURN TO CASTLE";
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 10vw;
+    text-shadow: -2px 1px 10px rgb(255, 123, 0);
+    user-select: none;
+    margin: 0%;
+}
+
+h2 {
+    color: white;
+    font-family: "RETURN TO CASTLE";
+    user-select: none;
+    margin: 2%;
+}
+
+h3 {
+    padding-left: 10px;
+    margin: auto;
+    user-select: none;
+}
+
+.home {
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    font-family: "RETURN TO CASTLE";
+    text-shadow: -2px 1px 5px rgb(255, 123, 0);
+    user-select: none;
+}
+
+.navbar {
+    font-size: 3.7vw;
+    font-family: "RETURN TO CASTLE";
+    width: 85vw;
+    min-width: 30%;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.navbar a:hover {
+    text-shadow: -2px 1px 10px rgb(255, 0, 0);
+}
+
+.navbar a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    text-shadow: -2px 1px 10px rgb(255, 187, 0);
+    padding: 0 10px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: whitesmoke;
+    height: 0.15vw;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.pics {
+    width: 45vw;
+    height: 28vw;
+    object-fit: cover;
+}
+
+.bot {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2vw;
+    font-family: "DINOT-Regular";
+    color: white;
+    border-top: 0.5vw solid rgb(63, 63, 63);
+    padding-top: 1.3vw;
+    padding-bottom: 0px;
+}
+
+.bot a {
+    color: white;
+    text-decoration: none;
+}
+
+.bot a:hover {
+    text-shadow: -2px 1px 10px rgb(115, 255, 0);
+}
+
+.bot ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "DINOT-Regular";
+    font-size: 1.2vw;
+    color: #999;
+    border-top: 0.5vw solid rgb(63, 63, 63);
+    padding: 10px;
+}
+
+@font-face {
+    font-family: "RETURN TO CASTLE";
+    src: url("https://db.onlinewebfonts.com/t/c5982b0155c8ea11e42ff17c07a8f9fd.eot");
+    src: url("https://db.onlinewebfonts.com/t/c5982b0155c8ea11e42ff17c07a8f9fd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c5982b0155c8ea11e42ff17c07a8f9fd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c5982b0155c8ea11e42ff17c07a8f9fd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c5982b0155c8ea11e42ff17c07a8f9fd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c5982b0155c8ea11e42ff17c07a8f9fd.svg#RETURN TO CASTLE")format("svg");
+}
+
+@font-face {
+    font-family: "DINOT-Regular";
+    src: url("https://db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.svg#DINOT-Regular")format("svg");
+}
